@@ -210,7 +210,9 @@ img {
 }
 
 /* Add shadow header */
-
+.shadow-header{
+  box-shadow: 0px 8px 16px hsla(166, 85%, 8%, .3);
+}
 
 /* Active link */
 
@@ -302,6 +304,9 @@ img {
   color: var(--white-color);
   margin-bottom: 1.5rem;
 }
+
+
+/*=============== BUTTON ===============*/
 .button{
   display: inline-flex;
   justify-content: center;
@@ -315,15 +320,88 @@ img {
   background-color: var(--first-color-alt);
   box-shadow: 0px 8px 16px hsla(166, 85%, 8%, .3);
 }
-
-/*=============== BUTTON ===============*/
-
-
+.button__dark{
+  background-color: var(--dark-color);
+  color: var(--white-color);
+}
+.button__dark:hover{
+  background-color: hsl(166, 95%, 10%);
+}
 /*=============== POPULAR ===============*/
+.popular{
+  background-color: var(--body-white-color);
+}
+.popular .section__title{
+  color: var(--title-color);
+}
+.popular__swiper{
+  padding-top: 1.5rem;
+}
+.popular__card{
+  max-width: 270px;
+  display: grid;
+  row-gap: 1.5rem;
+}
+.popular__images{
+  position: relative;
+  display: grid;
+  justify-items: center;
+  justify-self: center;
+}
+.popular__shape{
+  width: 195px;
+  height: 195px;
+  background-color: var(--first-color);
+  border-radius: 50%;
+  clip-path: inset(50% 0 0 0);
+}
+.popular__images img{
+  position: absolute;
+}
+.popular__coffee{
+  width: 120px;
+  bottom: -.5rem;
+}
+.popular__bean-1{
+  width: 30px;
+  top: 3.5rem;
+  left: 1rem;
+  transition: transform .4s;
+}
+.popular__card:hover .popular__bean-1{
+  transform: translate(-.5rem, -.25rem);
+}
+.popular__bean-2{
+  width: 20px;
+  bottom: 2rem;
+  right: 2rem;
+  rotate: 75deg;
+  transition: transform .4s;
+}
+.popular__card:hover .popular__bean-2{
+  transform: translate(.5rem, -.25rem);
+}
+.popular__data{
+  text-align: center;
+}
+.popular__name{
+  font-size: var(--h1-font-size);
+  font-weight: var(--font-semi-bold);
+  color: var(--title-color);
+  margin-bottom: .5rem;
+}
+.popular__description{
+  color: var(--text-color);
+  margin-bottom: 1.5rem;
+}
+
 
 
 /* Swiper class */
-
+.swiper{
+  overflow: visible;
+  margin-inline: initial;
+}
 
 /*=============== ABOUT ===============*/
 
