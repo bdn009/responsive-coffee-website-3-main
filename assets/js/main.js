@@ -38,15 +38,15 @@ const swiperpopular = new Swiper('.popular__swiper', {
     loop: true,
     grabCursor: true,
     spaceBetween: 32,
-    slidePreView: 'auto',
-    centerdSlides: true,
+    slidesPerView: 'auto',
+    centeredSlides: true,
 
     breakpoints:{
         1120:{
             spaceBetween: 80,
         }
     }
-  });
+  })
 
 /*=============== SHOW SCROLL UP ===============*/ 
 
